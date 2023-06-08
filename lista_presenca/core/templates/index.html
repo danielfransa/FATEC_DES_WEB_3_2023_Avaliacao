@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+  <head>
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Lista de Presença</h1>
+      <form method="POST" action="{% url 'cadastro' %}">
+        {% csrf_token %}
+        <div class="form-field">
+          {{ form.nome.label_tag }}<br>
+          {{ form.nome }}
+        </div>
+    
+        <div class="form-field">
+          {{ form.nome_professor.label_tag }}<br>
+          {{ form.nome_professor }}
+        </div>
+    
+        <div class="form-field">
+          {{ form.disciplina.label_tag }}<br>
+          {{ form.disciplina }}
+        </div>
+    
+        <input type="submit" value="Enviar" class="submit-button">
+      </form>
+    </div>
+  </body>
+</html>
