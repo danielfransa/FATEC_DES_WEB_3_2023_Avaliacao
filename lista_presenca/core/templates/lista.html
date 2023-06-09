@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+  <head>
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+  </head>
+<body>
+
+    {% block content %}
+    <h1>Lista de Presença</h1>
+
+    <table>
+      <tr>
+        <th>Nome do Aluno</th>
+        <th>Nome do Professor</th>
+        <th>Disciplina</th>
+      </tr>
+      {% for presenca in presencas %}
+      <tr>
+        <td>{{ presenca.nome }}</td>
+        <td>{{ presenca.nome_professor }}</td>
+        <td>{{ presenca.disciplina }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  
+
+    {% endblock %}
+
+</body>
+
+</html>

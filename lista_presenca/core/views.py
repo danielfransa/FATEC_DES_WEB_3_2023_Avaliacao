@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+
+from core.models import ListaPresenca
 from .forms import ListaPresencaForm
 
 def cadastro(request):
@@ -15,3 +17,7 @@ def cadastro(request):
         'form': form
     }
     return render(request, 'index.html', context)
+
+def listar(request):
+    presencas = ListaPresenca.objects.all()
+    return render(request, 'lista.html', {'presencas': presencas})
