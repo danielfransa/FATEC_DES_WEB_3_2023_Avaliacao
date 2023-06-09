@@ -16,4 +16,4 @@ Essa rota lista todos os alunos que cadastraram suas presenças:
 
 ![Imagem lista](./imagens/lista.JPG)
 
-### Obs: não foi colocado nenhum botão não foi colocado nenhum botão ou link levando para a página lista, pois teoricamente ela deveria ser mostrada apenas aos professores, caso no final do semestre sobre tempo estarei criando uma branch de melhorias nesse projeto.
+### Obs: não foi colocado nenhum botão ou link levando para a página lista, pois teoricamente ela deveria ser mostrada apenas aos professores, caso no final do semestre "sobre" tempo estarei criando uma branch de melhorias nesse projeto.
